@@ -1,2 +1,0 @@
-# PROGTEK-yc
-Progtekyc 

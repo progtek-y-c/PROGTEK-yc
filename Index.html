@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>אודות progtek-yc</title>
+<style>
+body {
+  font-family: 'Assistant', sans-serif;
+  background: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+header {
+  background: #3b0a6b;
+  color: #00f4ff;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+nav {
+  margin-top: 10px;
+}
+nav a {
+  color: #00f4ff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #00c1cc;
+}
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  padding: 30px;
+}
+footer a {
+  color: #9FFFF8;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #00c1cc;
+}
+section h2 {
+  color: #00f4ff;
+  border-bottom: 2px solid #00f4ff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+section p {
+  font-size: 1.05em;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+footer {
+  background: #3b0a6b;
+  color: #00f4ff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+input, textarea, button {
+  font-family: inherit;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  background: #1f1f1f;
+  color: #e0e0e0;
+}
+button {
+  background: #00f4ff;
+  color: #1a1a1a;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: #00c1cc;
+}
+#loading {
+  display: none;
+  text-align: center;
+  color: #00f4ff;
+  font-weight: bold;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 10px;
+}
+.accordion {
+  display: block;
+  color: #00f4ff;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background: #2a2a2a;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.accordion:hover {
+  background: #3b0a6b;
+}
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  background: #1f1f1f;
+  color: #e0e0e0;
+  border-left: 3px solid #00f4ff;
+  border-radius: 0 0 8px 8px;
+  margin-bottom: 10px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.panel p {
+  margin: 10px 0;
+}
+
+#main-nav {
+  background-color: #620099; /* כחול עמוק */
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#main-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#main-nav a:hover {
+  color: #9FFFF8; 
+}
+</style>
+</head>
+<body>
+<img src="progtek-yc.jpeg" alt="לוגו PROGTEK-YC" width="120" height="120" style="display:block; margin:0 auto;">
+
+<header>
+  <h1>progtek - yc<br>
+ דף הבית</h1>
+<nav id="main-nav">
+  <a href="#who">מי אנחנו</a>
+  <a href="#company">על החברה</a>
+    <br>
+  <a href="#services">השירותים שלנו</a>
+  <a href="#contact">השארת פנייה</a>
+</nav>
+</header>
+
+<section id="who">
+  <h2>מי אנחנו</h2>
+  <p>חברת progtek - yc היא חברה בעלת נסיון של למעלה מ 20 שנה בתחום הפיתוח, החברה שמה דגש על  פיתוח אתרים אפליקציות ומערכות טלפוניה של ימות המשיח.</p>
+  <p>המטרה שלנו היא להפוך את החלום שלך על אתר מושקע, למציאות בשיא האיכות ללא פשרות ובמחירים נוחים.</p>
+</section>
+
+<section id="company">
+<h2>על החברה </h2>
+  <p>progtek-YC הוקמה מתוך חזון לשלב טכנולוגיה חכמה בשירות הציבור והמוסדות. אנו מספקים פתרונות IVR, אוטומציה עסקית, אינטגרציות טלגרם, ופיתוח אתרים בהתאמה אישית.</p>
+  <p>צוות החברה פועל ברמה גבוהה של אמינות, שקיפות ומענה אנושי בכל פרויקט.</p>
+</section>
+
+<section id="services">
+  <h2>השירותים שלנו</h2>
+  <ul>
+    <li>
+      <a href="#" class="accordion">פיתוח מערכות ימות המשיח חכמות.        ></a>
+      <div class="panel"><p>שלוחות ניהול מתקדמות, ממשקי ניהול באתר, שלוחות api, 
+<br>אינטראקציות עם שירותים שונים לבחירתכם, שלוחות קבלת נתונים תפריטים מותאמים,  שירותי קריינות, פיתוח של שלוחות חדשות, פילטרים ועוד...</p></div>
+    </li>
+    <li>
+      <a href="#" class="accordion">בניית אתרי אינטרנט ופורומים אינטראקטיביים.          ></a>
+      <div class="panel"><p>אתרים עם ממשק מודרני, פורומים דינמיים, הרשמה/התחברות, ניהול תוכן נוח, עיצוב מותאם לכל המכשירים., ממשקי api מותאמים אישית, שירותי ענן, שירותי סנכרון, לינוקס, ועוד...</p></div>
+    </li>
+    <li>
+      <a href="#" class="accordion">אוטומציה ודיווח נתונים מול שירותים שונים ב google.     ></a>
+      <div class="panel"><p>אוטומציה של שליחת וקבלת נתונים, עדכונים בזמן אמת, ניתוח דוחות ודיווח מותאם אישית.<br>api שירותי גוגל, Google chet, Google sheets, Google drive, Google maps, Google one, <br>Google apps script, Google cloud, gmail, ועוד...</p></div>
+    </li>
+    <li>
+      <a href="#" class="accordion">פיתוח בוטים לטלגרם, וואטסאפ ומערכות קול.     ></a>
+      <div class="panel"><p>בוטים חכמים לשליחת הודעות, תגובות אוטומטיות, אינטגרציה עם מערכות קול, הפעלה חכמה של תהליכים.</p></div>
+    </li>
+    <li>
+      <a href="#" class="accordion">עיצוב UI/UX מודרני ומותאם אישית.     ></a>
+      <div class="panel"><p>חוויית משתמש מעוצבת היטב, צבעים מתאימים, ניווט נוח, ועיצוב רספונסיבי לכל המכשירים., בהתאמה אישית מלאה </p></div>
+    </li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>השארת פנייה</h2>
+  <form id="contactForm">
+    <input type="text" name="שם" placeholder="שם מלא" required>
+    <input type="email" name="אימייל" placeholder="אימייל ליצירת קשר" required>
+    <textarea name="פניה" placeholder="כתוב כאן את פנייתך..." rows="4" required></textarea>
+    <button type="submit">שלח פנייה</button>
+    <div id="loading">שולח פנייה... אנא המתן</div>
+  </form>
+</section>
+
+<footer>
+  © כל הזכויות שמורות ל progtek-yc פיתוח אתרים ואפליקציות. אימייל: <a href="mailto:progtekyc@gmail.com">progtekyc@gmail.com</a>
+</footer>
+
+<script>
+// Accordion עם אנימציה חלקה
+const accordions = document.querySelectorAll('.accordion');
+accordions.forEach(acc => {
+  acc.addEventListener('click', function(e) {
+    e.preventDefault();
+    const panel = this.nextElementSibling;
+    document.querySelectorAll('.panel').forEach(p => {
+      if(p !== panel){
+        p.style.maxHeight = null;
+        p.style.padding = "0 20px";
+      }
+    });
+    if(panel.style.maxHeight){
+      panel.style.maxHeight = null;
+      panel.style.padding = "0 20px";
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.padding = "10px 20px";
+    }
+  });
+});
+
+// שליחת הפנייה ל-Google Script
+document.getElementById('contactForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const loading = document.getElementById('loading');
+  loading.style.display = 'block';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw2XWfH_wEEfN87eOTsVFAjfvrkd_y942MF1LITCXpwulID2fiy83kEDk6jmJfw9weI/exec';
+  const formData = new FormData(e.target);
+  try {
+    await fetch(scriptURL, { method: 'POST', body: formData });
+    e.target.reset();
+    loading.innerText = '✅ הפנייה נשלחה בהצלחה!';
+  } catch (error) {
+    loading.innerText = '❌ שגיאה בשליחה, נסה שוב.';
+  }
+  setTimeout(() => loading.style.display = 'none', 4000);
+});
+</script>
+
+</body>
+</html>
